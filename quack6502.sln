@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qk-renderer", "qk-renderer\qk-renderer.vcxproj", "{E937337E-1DF6-4C3E-9BD0-0221842A65D4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3AC76057-8622-429E-9F76-82E9AA9C7021} = {3AC76057-8622-429E-9F76-82E9AA9C7021}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qk-emulator", "qk-emulator\qk-emulator.vcxproj", "{3AC76057-8622-429E-9F76-82E9AA9C7021}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E937337E-1DF6-4C3E-9BD0-0221842A65D4}.Debug|x64.ActiveCfg = Debug|x64
+		{E937337E-1DF6-4C3E-9BD0-0221842A65D4}.Debug|x64.Build.0 = Debug|x64
+		{E937337E-1DF6-4C3E-9BD0-0221842A65D4}.Debug|x86.ActiveCfg = Debug|x64
+		{E937337E-1DF6-4C3E-9BD0-0221842A65D4}.Debug|x86.Build.0 = Debug|x64
+		{E937337E-1DF6-4C3E-9BD0-0221842A65D4}.Release|x64.ActiveCfg = Release|x64
+		{E937337E-1DF6-4C3E-9BD0-0221842A65D4}.Release|x64.Build.0 = Release|x64
+		{E937337E-1DF6-4C3E-9BD0-0221842A65D4}.Release|x86.ActiveCfg = Debug|x64
+		{E937337E-1DF6-4C3E-9BD0-0221842A65D4}.Release|x86.Build.0 = Debug|x64
+		{3AC76057-8622-429E-9F76-82E9AA9C7021}.Debug|x64.ActiveCfg = Debug|x64
+		{3AC76057-8622-429E-9F76-82E9AA9C7021}.Debug|x64.Build.0 = Debug|x64
+		{3AC76057-8622-429E-9F76-82E9AA9C7021}.Debug|x86.ActiveCfg = Debug|x64
+		{3AC76057-8622-429E-9F76-82E9AA9C7021}.Debug|x86.Build.0 = Debug|x64
+		{3AC76057-8622-429E-9F76-82E9AA9C7021}.Release|x64.ActiveCfg = Release|x64
+		{3AC76057-8622-429E-9F76-82E9AA9C7021}.Release|x64.Build.0 = Release|x64
+		{3AC76057-8622-429E-9F76-82E9AA9C7021}.Release|x86.ActiveCfg = Debug|x64
+		{3AC76057-8622-429E-9F76-82E9AA9C7021}.Release|x86.Build.0 = Debug|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A2D7FE76-4E48-4805-B14D-43F8A2DB0AD0}
+	EndGlobalSection
+EndGlobal

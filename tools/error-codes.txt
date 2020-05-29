@@ -1,0 +1,24 @@
+CODE	ORIGIN			ERROR TYPE			DESCRIPTION
+====	======			==========			==========
+0	n/a			n/a				The program succesfully ran and quit without errors.
+
+301	bus.cpp			programmer error		Address mapping conflict: two devices want to occupy overlapping address ranges on bus.
+310	bus.cpp			programmer error		A Bus::Device object was instantiated with an invalid address range, because min address exceeds max address.
+311*	bus.cpp			program(mer) error		A class derived from Bus::Device did not implement ReadFromDevice method, but another device tried to read from it. (* Debug build only)
+312*	bus.cpp			program(mer) error		A class derived from Bus::Device did not implement WriteFromDevice method, but another device tried to write to it. (* Debug build only)
+
+400*	memory.cpp		program(mer) error		Illegal write operation to ROM. ROM is read-only. (* Debug build only)
+
+500	nes-cartridge.cpp	user error			NES-specific. Tried to load a file that is not a valid iNES ROM file.
+510	nes-mapper.cpp		unsupported operation		NES-specific. No compatible mapper available for this cartridge.
+550	nes-romfile.cpp		user/program error		NES-specific. Cannot access ROM file at path specified by user.
+560	nes-romfile.cpp		unsupported operation		NES-specific. No support (yet) for this NES ROM file format.
+
+620	nes-ppu.cpp		unsupported opertaion		NES-specific. User supplied a ROM that uses a nametable mirroring mode that PPU emulation does not (yet) support.
+630     nes-ppu.cpp         	unsupported opertaion   	NES-specific. User supplied a ROM that uses a video system (PAL) that PPU emulation does not support.
+666*	nes-ppu.cpp		programmer error		NES-specific. Array out of bounds error when writing to PPU screen buffer. (* Debug build only)
+
+710	nes-apu.cpp		programmer error		NES-specific. APU's FillAudioBuffer method was called with a buffer size that exceeds APU's internal buffer size.
+
+7300	qk-renderer		programmer error		The required SDL subsystems were not initialized before starting renderer.
+7301	qk-renderer		system error			Failed to open a compatible audio device.
