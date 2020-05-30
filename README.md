@@ -13,7 +13,7 @@ There is currently only limited support for the Nintendo Entertainment System:
 
 * No audio, as the APU code is still too buggy to be usable
 * Support for NTSC only
-* Support for NROM cartrigde based games only (iNES mapper 0)
+* Support for NROM cartridge based games only (iNES mapper 0)
 
 Usage is as follows:
 ```
