@@ -9,7 +9,7 @@
 namespace Qk { namespace NES
 {
 	constexpr int SCREEN_WIDTH = 256;
-	constexpr int SCREEN_HEIGTH = 240;
+	constexpr int SCREEN_HEIGHT = 240;
 
 	class RP2C02 : public Bus::Device
 	{
@@ -198,7 +198,7 @@ namespace Qk { namespace NES
 		int m_remainingOAMDMACycles = 0;
 
 		unsigned long m_frameCounter = 0;
-		Pixel m_framebuffer[SCREEN_WIDTH * SCREEN_HEIGTH];
+		Pixel m_framebuffer[SCREEN_WIDTH * SCREEN_HEIGHT];
 		FramebufferDescriptor m_fi;
 
 		// NES palette RGB values sourced from: https://wiki.nesdev.com/w/index.php/PPU_palettes#2C02

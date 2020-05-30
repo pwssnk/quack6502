@@ -11,13 +11,13 @@ using namespace Qk::NES;
 */
 
 RP2C02::RP2C02(Bus& bus, CartridgeSlot& cartridge) 
-	: Bus::Device(bus, true, AddressRange(0x2000, 0x2007)), m_cart(cartridge), m_fi(m_framebuffer, SCREEN_WIDTH, SCREEN_HEIGTH)
+	: Bus::Device(bus, true, AddressRange(0x2000, 0x2007)), m_cart(cartridge), m_fi(m_framebuffer, SCREEN_WIDTH, SCREEN_HEIGHT)
 {
 	Reset();
 }
 
 RP2C02::RP2C02(Bus& bus, const AddressRange& addressableRange, CartridgeSlot& cartridge) 
-	: Bus::Device(bus, true, addressableRange), m_cart(cartridge), m_fi(m_framebuffer, SCREEN_WIDTH, SCREEN_HEIGTH)
+	: Bus::Device(bus, true, addressableRange), m_cart(cartridge), m_fi(m_framebuffer, SCREEN_WIDTH, SCREEN_HEIGHT)
 {
 	Reset();
 }
